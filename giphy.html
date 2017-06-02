@@ -139,6 +139,16 @@
                 $('src');
               } 
 
+              if(state === "still"){
+              $(this)
+              .attr("src", $(this).attr("data-animate"))
+              .attr("data-state", "animate");
+              }else{
+               $(this)
+               .attr('src', $(this).data("still"))
+               .attr("data-state",'still');
+              }
+
             });
 
           });
@@ -155,6 +165,22 @@
         displayGifs();
       });
     displayGifs();
+
+
+  $
+    var state = $(this).attr('data-state')
+    console.log(state)
+
+    if(state === "still"){
+    $(this)
+    .attr("src", $(this).attr("data-animate"))
+    .attr("data-state", "animate");
+    }else{
+     $(this)
+     .attr('src', $(this).data("still"))
+     .attr("data-state",'still');
+    }
+  
 
 
 	
